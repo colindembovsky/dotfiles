@@ -100,6 +100,9 @@ if [ "$TERM" != "linux" ]; then
     install_powerline_precmd
 fi
 
+# plugins
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment

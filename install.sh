@@ -11,9 +11,9 @@ zshrc() {
     cd ..
     rm -rf fonts
     echo "==========================================================="
-    echo "             install powerline-shell                       "
+    echo "             install fonts-powerline                       "
     echo "-----------------------------------------------------------"
-    pip install powerline-shell
+    apt install fonts-powerline
     echo "==========================================================="
     echo "             cloning zsh-autosuggestions                   "
     echo "-----------------------------------------------------------"
@@ -38,3 +38,6 @@ echo "LS_COLORS+=':ow=01;33'" >> ~/.zshrc
 echo "" >> ~/.zshrc
 echo "# set time zone" >> ~/.zshrc
 echo "export TZ=America/Chicago" >> ~/.zshrc
+
+# git config
+git config pull.ff only
