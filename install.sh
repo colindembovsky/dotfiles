@@ -1,6 +1,15 @@
 #!/bin/sh
 
 zshrc() {
+    # clone
+    echo "==========================================================="
+    echo "             install powerline fonts                       "
+    echo "-----------------------------------------------------------"
+    git clone https://github.com/powerline/fonts.git --depth=1
+    cd fonts
+    ./install.sh
+    cd ..
+    rm -rf fonts
     echo "==========================================================="
     echo "             install powerline-shell                       "
     echo "-----------------------------------------------------------"
@@ -8,11 +17,11 @@ zshrc() {
     echo "==========================================================="
     echo "             cloning zsh-autosuggestions                   "
     echo "-----------------------------------------------------------"
-    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    #git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
     echo "==========================================================="
     echo "             cloning zsh-syntax-highlighting               "
     echo "-----------------------------------------------------------"
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    #git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
     echo "==========================================================="
     echo "             import zshrc                                  "
     echo "-----------------------------------------------------------"
