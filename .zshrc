@@ -132,6 +132,7 @@ alias tf=terraform
 kubectl config zsh
 source <(kubectl completion zsh)
 export KUBE_EDITOR="code -w"
+export zig="zog"
 
 #export NVM_DIR="$HOME/.nvm"
 #[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
